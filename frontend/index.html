@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURELIA | Luxury Fashion</title>
+    <meta name="description" content="Aurelia - Minimalist, high-end editorial fashion. Pure Italian silk and hand-sourced cashmere.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Wardrobe Landing -->
+    <div class="wardrobe-landing" id="wardrobe-landing">
+        <div class="door left-door">
+            <div class="door-inner"></div>
+        </div>
+        <div class="door right-door">
+            <div class="door-inner"></div>
+        </div>
+        <div class="wardrobe-content">
+            <h1 class="wardrobe-title">AURELIA</h1>
+            <p class="wardrobe-subtitle">Click to Enter</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Aurelia</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Boutique</a></li>
+                <li><a href="about.html">Maison</a></li>
+                <li><a href="contact.html">Concierge</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="cart-icon-wrapper" id="cart-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Slide-out Cart Drawer -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Selection</h3>
+            <span class="close-cart" id="close-cart">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items will be injected here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <a href="checkout.html"><button class="btn-primary checkout-btn">Proceed to Checkout</button></a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content fade-in">
+                <h1>Elegance, Defined.</h1>
+                <p>Discover our latest collection of uncompromising craftsmanship and minimalist design.</p>
+                <a href="#collection"><button class="btn-primary">Explore Collection</button></a>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section id="collection">
+            <h2 class="section-title fade-in">Curated Selections</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be fetched and injected here via JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Chat FAB -->
+    <div class="fab-container">
+        <div class="fab" id="chat-fab">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </div>
+        
+        <!-- Chat Window -->
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">Aurelia Concierge</div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">Welcome to Aurelia. How may I assist you with your wardrobe today?</div>
+            </div>
+            <form class="chat-input" id="chat-form">
+                <input type="text" id="chat-input" placeholder="Type a message..." required autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AURELIA. All rights reserved. Crafted with unparalleled excellence.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
